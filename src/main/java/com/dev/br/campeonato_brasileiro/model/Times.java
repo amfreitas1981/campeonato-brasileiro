@@ -26,6 +26,8 @@ public class Times {
 
     private String sigla;
 
+    private String estado;
+
     public Times(String nome) {
         this.nome = nome;
     }

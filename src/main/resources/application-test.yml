@@ -1,0 +1,8 @@
+# Outras configurações
+spring:
+  application:
+    name: campeonato-brasileiro-test
+
+# Configuração de testes
+campeonato:
+  data-inicio: 2025-06-10

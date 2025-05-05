@@ -11,6 +11,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.LocalDate;
+
 @Entity
 @Getter
 @Setter
@@ -30,12 +32,14 @@ public class Partidas {
     private Times timesFora;
 
     private Integer golsCasa;
-    private Integer golsFora;
-    private int rodada;
+    private Integer golsVisitante;
+    private int round;
+    private LocalDate dataPartida;
 
-    public Partidas(Times timesCasa, Times timesFora, int rodada) {
+    public Partidas(Times timesCasa, Times timesFora, int round, LocalDate dataPartida) {
         this.timesCasa = timesCasa;
         this.timesFora = timesFora;
-        this.rodada = rodada;
+        this.round = round;
+        this.dataPartida = dataPartida;
     }
 }
