@@ -1,0 +1,14 @@
+com\dev\br\campeonato_brasileiro\model\TimesTest.class
+com\dev\br\campeonato_brasileiro\service\GeradorDePartidasServiceTest.class
+com\dev\br\campeonato_brasileiro\service\TimesCampeonatoServiceTest.class
+com\dev\br\campeonato_brasileiro\controller\CampeonatoControllerTest.class
+com\dev\br\campeonato_brasileiro\model\PartidasTest.class
+com\dev\br\campeonato_brasileiro\service\ClassificacaoServiceTest.class
+com\dev\br\campeonato_brasileiro\dto\TimesDTOTest.class
+com\dev\br\campeonato_brasileiro\dto\PartidasDTOTest.class
+com\dev\br\campeonato_brasileiro\dto\ClassificacaoDTOTest.class
+com\dev\br\campeonato_brasileiro\service\ExportacaoServiceTest.class
+com\dev\br\campeonato_brasileiro\controller\TimesCampeonatoControllerTest.class
+com\dev\br\campeonato_brasileiro\config\MockitoConfiguration.class
+com\dev\br\campeonato_brasileiro\controller\ClassificacaoControllerTest.class
+com\dev\br\campeonato_brasileiro\model\ClassificacaoTest.class

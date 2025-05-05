@@ -1,0 +1,21 @@
+#spring.application.name=campeonato-brasileiro
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE # Exemplo para Oracle XE. Ajuste o host, porta e SID conforme necessario
+    username: system # Substitua pelo nome de usuario do seu banco de dados Oracle
+    password: welcome1 # Substitua pela senha do banco de dados Oracle
+    driver-class-name: oracle.jdbc.OracleDriver # Driver JDBC do Oracle
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        ddl-auto: update
+#    hibernate:
+#    show-sql: true
+#    database-platform: org.hibernate.dialect.Oracle12cDialect
+
+campeonato:
+  data-inicio: 2025-06-01
+
+server:
+  port: 8080

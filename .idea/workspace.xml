@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1997a46f-33ad-4a4b-964f-6cbe1db60e04" name="Changes" comment="Ajustes README.md, criacao classes de testes, criacao application-test.yml">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2wakPJh9zHpIUUhVNfpezYL4JDY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.CampeonatoBrasileiroApplication.executor": "Run",
+    "JUnit.All in campeonato-brasileiro.executor": "Coverage",
+    "JUnit.CampeonatoBrasileiroApplicationTest.executor": "Coverage",
+    "JUnit.CampeonatoBrasileiroApplicationTests.executor": "Coverage",
+    "JUnit.CampeonatoBrasileiroSimpleTest.executor": "Coverage",
+    "JUnit.CampeonatoControllerTest.executor": "Coverage",
+    "JUnit.CampeonatoPropertiesTest.executor": "Coverage",
+    "JUnit.ClassificacaoControllerTest.executor": "Coverage",
+    "JUnit.ClassificacaoDTOTest.executor": "Coverage",
+    "JUnit.ClassificacaoServiceTest.executor": "Coverage",
+    "JUnit.ClassificacaoTest.executor": "Coverage",
+    "JUnit.ExportacaoServiceTest.executor": "Coverage",
+    "JUnit.GeradorDePartidasServiceTest.executor": "Coverage",
+    "JUnit.PartidasDTOTest.executor": "Coverage",
+    "JUnit.PartidasTest.executor": "Coverage",
+    "JUnit.TimesCampeonatoControllerTest.executor": "Coverage",
+    "JUnit.TimesCampeonatoServiceTest.executor": "Coverage",
+    "JUnit.TimesDTOTest.executor": "Coverage",
+    "JUnit.TimesTest.executor": "Coverage",
+    "JUnit.java in campeonato-brasileiro.executor": "Coverage",
+    "Maven.campeonato-brasileiro [clean,install,-U].executor": "Run",
+    "Maven.campeonato-brasileiro [clean,install].executor": "Run",
+    "Maven.campeonato-brasileiro [dependency-check:check].executor": "Run",
+    "Maven.campeonato-brasileiro [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dev.br.campeonato_brasileiro" />
+      <recent name="com.dev.br.campeonato_brasileiro.dto" />
+      <recent name="com.dev.br.campeonato_brasileiro.model" />
+      <recent name="com.dev.br.campeonato_brasileiro.config" />
+      <recent name="com.dev.br.campeonato_brasileiro.controller" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+      <command value="mvn clean install" />
+      <command value="mvn dependency-check:check" />
+      <command value="mvn clean install -U" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CampeonatoBrasileiroApplication">
+    <configuration name="CampeonatoBrasileiroApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.CampeonatoBrasileiroApplication" />
+      <module name="campeonato-brasileiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampeonatoBrasileiroApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campeonato-brasileiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro" />
+      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.CampeonatoBrasileiroApplicationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampeonatoBrasileiroApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campeonato-brasileiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro" />
+      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.CampeonatoBrasileiroApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CampeonatoBrasileiroSimpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campeonato-brasileiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro" />
+      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.CampeonatoBrasileiroSimpleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in campeonato-brasileiro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campeonato-brasileiro" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CampeonatoBrasileiroApplication" />
+        <item itemvalue="JUnit.java in campeonato-brasileiro" />
+        <item itemvalue="JUnit.CampeonatoBrasileiroApplicationTest" />
+        <item itemvalue="JUnit.CampeonatoBrasileiroSimpleTest" />
+        <item itemvalue="JUnit.CampeonatoBrasileiroApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1997a46f-33ad-4a4b-964f-6cbe1db60e04" name="Changes" comment="" />
+      <created>1746287053112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746287053112</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Versao inicial">
+      <option name="closed" value="true" />
+      <created>1746287632315</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746287632315</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ajustes README.md, criacao classes de testes, criacao application-test.yml">
+      <option name="closed" value="true" />
+      <created>1746416084734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746416084734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Versao inicial" />
+    <MESSAGE value="Ajustes README.md, criacao classes de testes, criacao application-test.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes README.md, criacao classes de testes, criacao application-test.yml" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ExportacaoServiceTest.ic" NAME="ExportacaoServiceTest Coverage Results" MODIFIED="1746334770356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoServiceTest.ic" NAME="ClassificacaoServiceTest Coverage Results" MODIFIED="1746335130103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$All_in_campeonato_brasileiro.ic" NAME="All in campeonato-brasileiro Coverage Results" MODIFIED="1746379200021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoPropertiesTest.ic" NAME="CampeonatoPropertiesTest Coverage Results" MODIFIED="1746372698591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.config.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoTest.ic" NAME="ClassificacaoTest Coverage Results" MODIFIED="1746373497420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoBrasileiroSimpleTest.ic" NAME="CampeonatoBrasileiroSimpleTest Coverage Results" MODIFIED="1746414092047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoControllerTest.ic" NAME="CampeonatoControllerTest Coverage Results" MODIFIED="1746371547204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoControllerTest.ic" NAME="ClassificacaoControllerTest Coverage Results" MODIFIED="1746371879057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$PartidasTest.ic" NAME="PartidasTest Coverage Results" MODIFIED="1746373970291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoBrasileiroApplicationTest.ic" NAME="CampeonatoBrasileiroApplicationTest Coverage Results" MODIFIED="1746414530475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoDTOTest.ic" NAME="ClassificacaoDTOTest Coverage Results" MODIFIED="1746373477148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.dto.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$TimesTest.ic" NAME="TimesTest Coverage Results" MODIFIED="1746373524446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoBrasileiroApplicationTests.ic" NAME="CampeonatoBrasileiroApplicationTests Coverage Results" MODIFIED="1746411037632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$java_in_campeonato_brasileiro.ic" NAME="java in campeonato-brasileiro Coverage Results" MODIFIED="1746415302518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$GeradorDePartidasServiceTest.ic" NAME="GeradorDePartidasServiceTest Coverage Results" MODIFIED="1746369046268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$TimesDTOTest.ic" NAME="TimesDTOTest Coverage Results" MODIFIED="1746374629027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.dto.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$TimesCampeonatoControllerTest.ic" NAME="TimesCampeonatoControllerTest Coverage Results" MODIFIED="1746372246725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$TimesCampeonatoServiceTest.ic" NAME="TimesCampeonatoServiceTest Coverage Results" MODIFIED="1746369421707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$PartidasDTOTest.ic" NAME="PartidasDTOTest Coverage Results" MODIFIED="1746373927674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.dto.*</FILTER>
+    </SUITE>
+  </component>
+</project>
