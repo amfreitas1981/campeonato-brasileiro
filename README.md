@@ -77,8 +77,10 @@ cd campeonato-brasileiro
 
 ### 🔗 Endpoints da API (via Swagger)
 
-Após subir o projeto, acesse:
-http://localhost:8080/swagger-ui/index.html
+Após subir o projeto, acessar: http://localhost:8080/swagger-ui/index.html
+
+API Docs: http://localhost:8080/v3/api-docs
+
 
 Endpoints:
 
@@ -89,22 +91,148 @@ Endpoints:
   | POST        | /api/teams/insert            | Criar/inserir as equipes na tabela           |
   | GET         | /api/teams/consult           | Consultar as equipes na tabela               |
 
+Massa de dados para inserir as equipes:
+```bash
+[
+  {
+    "id": 0,
+    "nome": "Atlético-MG",
+    "sigla": "CAM",
+    "estado": "MG"
+  },
+  {
+    "id": 1,
+    "nome": "Bahia",
+    "sigla": "BAH",
+    "estado": "BA"
+  },
+  {
+    "id": 2,
+    "nome": "Botafogo",
+    "sigla": "BOT",
+    "estado": "RJ"
+  },
+  {
+    "id": 3,
+    "nome": "Ceará",
+    "sigla": "CEA",
+    "estado": "CE"
+  },
+  {
+    "id": 4,
+    "nome": "Corinthians",
+    "sigla": "COR",
+    "estado": "SP"
+  },
+  {
+    "id": 5,
+    "nome": "Cruzeiro",
+    "sigla": "CRU",
+    "estado": "MG"
+  },
+  {
+    "id": 6,
+    "nome": "Flamengo",
+    "sigla": "FLA",
+    "estado": "RJ"
+  },
+  {
+    "id": 7,
+    "nome": "Fluminense",
+    "sigla": "FLU",
+    "estado": "RJ"
+  },
+  {
+    "id": 8,
+    "nome": "Fortaleza",
+    "sigla": "FOR",
+    "estado": "CE"
+  },
+  {
+    "id": 9,
+    "nome": "Grêmio",
+    "sigla": "GRE",
+    "estado": "RS"
+  },
+  {
+    "id": 10,
+    "nome": "Internacional",
+    "sigla": "INT",
+    "estado": "RS"
+  },
+  {
+    "id": 11,
+    "nome": "Juventude",
+    "sigla": "JUV",
+    "estado": "RS"
+  },
+  {
+    "id": 12,
+    "nome": "Mirassol",
+    "sigla": "MIR",
+    "estado": "SP"
+  },
+  {
+    "id": 13,
+    "nome": "Palmeiras",
+    "sigla": "PAL",
+    "estado": "SP"
+  },
+  {
+    "id": 14,
+    "nome": "Red Bull Bragantino",
+    "sigla": "RBB",
+    "estado": "SP"
+  },
+  {
+    "id": 15,
+    "nome": "Santos",
+    "sigla": "SAN",
+    "estado": "SP"
+  },
+  {
+    "id": 16,
+    "nome": "São Paulo",
+    "sigla": "SAO",
+    "estado": "SP"
+  },
+  {
+    "id": 17,
+    "nome": "Sport",
+    "sigla": "SPO",
+    "estado": "PE"
+  },
+  {
+    "id": 18,
+    "nome": "Vasco da Gama",
+    "sigla": "VAS",
+    "estado": "RJ"
+  },
+  {
+    "id": 19,
+    "nome": "Vitória",
+    "sigla": "VIT",
+    "estado": "BA"
+  }
+]
+```
+
 - campeonato-controller --> Simula partidas, no geral e a cada rodada disputada, exporta planilha com as 
 simulações dos jogos realizados no Campeonato Brasileiro, com a opção para reiniciar, quando precisar 
 organizar nova competição, nos mesmos moldes.
   
-  | **Método**     | **Endpoint**                                        | **Descrição**                                                                        |
-  |----------------|-----------------------------------------------------|--------------------------------------------------------------------------------------|
-  | POST           | /api/championship/simulation                        | Lista a classificação geral                                                          |
-  | POST           | /api/championship/generate-rounds                   | Geração das partidas                                                                 |
-  | GET            | /api/championship/rounds                            | Consultar as partidas                                                                |
-  | GET            | /api/championship/round/{number}/matches            | Consultar os resultados de uma rodada específica                                     |
-  | GET            | /api/championship/round/export-classification       | Exportar os resultados via planilha .xslx                                            |
-  | GET            | /api/championship/classification                    | Exibir a classificação do campeonato                                                 |
-  | GET            | /api/championship/classification/sulamericana       | Exibir as equipes classificadas para a Copa Sul Americana                            |
-  | GET            | /api/championship/classification/libertadores       | Exibir as equipes classificadas para a Taça Libertadores da América                  |
-  | GET            | /api/championship/classification/downgrade          | Exibir as equipes que foram rebaixadas para a Série B                                |
-  | DELETE         | /api/championship/restart                           | Remover os dados do banco de dados e iniciar uma nova competição, no mesmo formato   |
+  | **Método**     | **Endpoint**                                        | **Descrição**                                                                                                         |
+  |----------------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+  | POST           | /api/championship/simulation                        | Lista a classificação geral                                                                                           |
+  | POST           | /api/championship/generate-rounds                   | Geração das partidas                                                                                                  |
+  | GET            | /api/championship/rounds                            | Consultar as partidas                                                                                                 |
+  | GET            | /api/championship/round/{number}/matches            | Consultar os resultados de uma rodada específica                                                                      |
+  | GET            | /api/championship/round/export-classification       | Exportar os resultados via planilha .xslx                                                                             |
+  | GET            | /api/championship/classification                    | Exibir a classificação do campeonato                                                                                  |
+  | GET            | /api/championship/classification/sulamericana       | Exibir as equipes classificadas para a Copa Sul Americana                                                             |
+  | GET            | /api/championship/classification/libertadores       | Exibir as equipes classificadas para a Taça Libertadores da América                                                   |
+  | GET            | /api/championship/classification/downgrade          | Exibir as equipes que foram rebaixadas para a Série B                                                                 |
+  | DELETE         | /api/championship/restart                           | Remove as partidas realizadas e a classificação do banco de dados, para iniciar uma nova competição, no mesmo formato |
 
 - classificacao-controller --> Informa, resumidamente a classificação do campeonato, de modo geral, com 
 os resultados simulados, os classificados para a Taça Libertadores da América, a Copa Sul Americana e os 

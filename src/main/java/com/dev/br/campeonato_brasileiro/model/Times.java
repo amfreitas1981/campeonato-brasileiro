@@ -28,7 +28,9 @@ public class Times {
 
     private String estado;
 
-    public Times(String nome) {
+    public Times(String nome, String sigla, String estado) {
         this.nome = nome;
+        this.sigla = sigla;
+        this.estado = estado;
     }
 }

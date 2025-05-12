@@ -1,5 +1,7 @@
 #spring.application.name=campeonato-brasileiro
 spring:
+  transaction:
+    default-timeout: 30
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:XE # Exemplo para Oracle XE. Ajuste o host, porta e SID conforme necessario
     username: system # Substitua pelo nome de usuario do seu banco de dados Oracle
@@ -7,6 +9,7 @@ spring:
     driver-class-name: oracle.jdbc.OracleDriver # Driver JDBC do Oracle
   jpa:
     properties:
+      open-in-view: false
       hibernate:
         dialect: org.hibernate.dialect.OracleDialect
         ddl-auto: update
@@ -16,6 +19,17 @@ spring:
 
 campeonato:
   data-inicio: 2025-06-01
+
+logging:
+  level:
+    org:
+      springframework:
+        orm: DEBUG
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
 
 server:
   port: 8080
