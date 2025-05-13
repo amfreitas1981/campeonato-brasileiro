@@ -91,14 +91,17 @@ public class ClassificacaoService {
     }
 
     public List<ClassificacaoDTO> getLibertadores() {
-        return listarClassificacaoGeral().subList(0, 6);
+        List<ClassificacaoDTO> classificacao = listarClassificacaoGeral();
+        return classificacao.size() >= 6 ? classificacao.subList(0, 6) : new ArrayList<>(classificacao);
     }
 
     public List<ClassificacaoDTO> getSulAmericana() {
-        return listarClassificacaoGeral().subList(6, 12);
+        List<ClassificacaoDTO> classificacao = listarClassificacaoGeral();
+        return classificacao.size() > 6 ? classificacao.subList(6, Math.min(12, classificacao.size())) : new ArrayList<>();
     }
 
     public List<ClassificacaoDTO> getRebaixamento() {
-        return listarClassificacaoGeral().subList(16, 20);
+        List<ClassificacaoDTO> classificacao = listarClassificacaoGeral();
+        return classificacao.size() > 16 ? classificacao.subList(16, Math.min(20, classificacao.size())) : new ArrayList<>();
     }
 }

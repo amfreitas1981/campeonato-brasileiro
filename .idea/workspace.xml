@@ -4,23 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1997a46f-33ad-4a4b-964f-6cbe1db60e04" name="Changes" comment="Ajustes README.md, criacao classes de testes, criacao application-test.yml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/exception/GlobalExceptionHandler.java" afterDir="false" />
+    <list default="true" id="1997a46f-33ad-4a4b-964f-6cbe1db60e04" name="Changes" comment="Ajustes para fazer os testes no Swagger.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/CampeonatoBrasileiroApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/SomeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/dto/TimesDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/dto/TimesDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/model/Times.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/model/Times.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/service/ClassificacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/service/ClassificacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/config/CampeonatoPropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/config/CampeonatoPropertiesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/dto/TimesDTOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/dto/TimesDTOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/model/ClassificacaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/model/ClassificacaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/model/PartidasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/model/PartidasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/model/TimesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/model/TimesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/ClassificacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/ClassificacaoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/GeradorDePartidasServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/GeradorDePartidasServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/dto/TimesDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/dto/TimesDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/model/Times.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/model/Times.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/campeonato-brasileiro-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/campeonato-brasileiro-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/campeonato-brasileiro-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/campeonato-brasileiro-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/service/ClassificacaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/service/ClassificacaoService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dependency-check-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/dependency-check-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.controller.ClassificacaoControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.controller.ClassificacaoControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.controller.TimesCampeonatoControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.controller.TimesCampeonatoControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.dto.ClassificacaoDTOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.dto.ClassificacaoDTOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.dto.PartidasDTOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.dto.PartidasDTOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.dto.TimesDTOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.dto.TimesDTOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.model.ClassificacaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.model.ClassificacaoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.model.PartidasTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.model.TimesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.model.TimesTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.ClassificacaoServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.ClassificacaoServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.ExportacaoServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.ExportacaoServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.TimesCampeonatoServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.dev.br.campeonato_brasileiro.service.TimesCampeonatoServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.controller.ClassificacaoControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.controller.ClassificacaoControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.controller.TimesCampeonatoControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.controller.TimesCampeonatoControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.dto.ClassificacaoDTOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.dto.ClassificacaoDTOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.dto.PartidasDTOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.dto.PartidasDTOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.dto.TimesDTOTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.dto.TimesDTOTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.model.ClassificacaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.model.ClassificacaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.model.PartidasTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.model.TimesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.model.TimesTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.ClassificacaoServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.ClassificacaoServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.ExportacaoServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.ExportacaoServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.TimesCampeonatoServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.dev.br.campeonato_brasileiro.service.TimesCampeonatoServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/controller/TimesCampeonatoControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/dto/TimesDTOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/dto/TimesDTOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/model/ClassificacaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/model/ClassificacaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/model/PartidasTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/model/TimesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/model/TimesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/service/ClassificacaoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/service/ClassificacaoServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/service/GeradorDePartidasServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/service/GeradorDePartidasServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dev/br/campeonato_brasileiro/service/TimesCampeonatoServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +77,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,7 +86,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -108,10 +151,10 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn test" />
-      <command value="mvn clean install" />
       <command value="mvn dependency-check:check" />
       <command value="mvn clean install -U" />
+      <command value="mvn clean install" />
+      <command value="mvn test" />
     </option>
   </component>
   <component name="RunManager" selected="Application.CampeonatoBrasileiroApplication">
@@ -124,36 +167,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CampeonatoBrasileiroApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="campeonato-brasileiro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro" />
-      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.CampeonatoBrasileiroApplicationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CampeonatoBrasileiroApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="campeonato-brasileiro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro" />
-      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.CampeonatoBrasileiroApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,6 +186,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ClassificacaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campeonato-brasileiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro.model" />
+      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.model.ClassificacaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="campeonato-brasileiro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dev.br.campeonato_brasileiro.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dev.br.campeonato_brasileiro.model" />
+      <option name="MAIN_CLASS_NAME" value="com.dev.br.campeonato_brasileiro.model.TimesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="java in campeonato-brasileiro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="campeonato-brasileiro" />
       <option name="TEST_OBJECT" value="directory" />
@@ -185,9 +228,9 @@
       <list>
         <item itemvalue="Application.CampeonatoBrasileiroApplication" />
         <item itemvalue="JUnit.java in campeonato-brasileiro" />
-        <item itemvalue="JUnit.CampeonatoBrasileiroApplicationTest" />
+        <item itemvalue="JUnit.TimesTest" />
+        <item itemvalue="JUnit.ClassificacaoTest" />
         <item itemvalue="JUnit.CampeonatoBrasileiroSimpleTest" />
-        <item itemvalue="JUnit.CampeonatoBrasileiroApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746416084734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajustes para fazer os testes no Swagger.">
+      <option name="closed" value="true" />
+      <created>1747075307206</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747075307206</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +285,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Versao inicial" />
     <MESSAGE value="Ajustes README.md, criacao classes de testes, criacao application-test.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes README.md, criacao classes de testes, criacao application-test.yml" />
+    <MESSAGE value="Ajustes para fazer os testes no Swagger." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes para fazer os testes no Swagger." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$ExportacaoServiceTest.ic" NAME="ExportacaoServiceTest Coverage Results" MODIFIED="1746334770356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
@@ -247,11 +299,11 @@
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoPropertiesTest.ic" NAME="CampeonatoPropertiesTest Coverage Results" MODIFIED="1746372698591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.dev.br.campeonato_brasileiro.config.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoTest.ic" NAME="ClassificacaoTest Coverage Results" MODIFIED="1746373497420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoBrasileiroSimpleTest.ic" NAME="CampeonatoBrasileiroSimpleTest Coverage Results" MODIFIED="1746414092047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.dev.br.campeonato_brasileiro.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoTest.ic" NAME="ClassificacaoTest Coverage Results" MODIFIED="1747091189416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoControllerTest.ic" NAME="CampeonatoControllerTest Coverage Results" MODIFIED="1746371547204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.dev.br.campeonato_brasileiro.controller.*</FILTER>
@@ -268,13 +320,13 @@
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$ClassificacaoDTOTest.ic" NAME="ClassificacaoDTOTest Coverage Results" MODIFIED="1746373477148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.dev.br.campeonato_brasileiro.dto.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/campeonato_brasileiro$TimesTest.ic" NAME="TimesTest Coverage Results" MODIFIED="1746373524446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$CampeonatoBrasileiroApplicationTests.ic" NAME="CampeonatoBrasileiroApplicationTests Coverage Results" MODIFIED="1746411037632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.dev.br.campeonato_brasileiro.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/campeonato_brasileiro$java_in_campeonato_brasileiro.ic" NAME="java in campeonato-brasileiro Coverage Results" MODIFIED="1746415302518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$TimesTest.ic" NAME="TimesTest Coverage Results" MODIFIED="1747091360894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.dev.br.campeonato_brasileiro.model.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/campeonato_brasileiro$java_in_campeonato_brasileiro.ic" NAME="java in campeonato-brasileiro Coverage Results" MODIFIED="1747099380657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/campeonato_brasileiro$GeradorDePartidasServiceTest.ic" NAME="GeradorDePartidasServiceTest Coverage Results" MODIFIED="1746369046268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.dev.br.campeonato_brasileiro.service.*</FILTER>
     </SUITE>

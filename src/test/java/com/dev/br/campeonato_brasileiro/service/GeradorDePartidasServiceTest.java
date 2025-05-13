@@ -13,6 +13,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDate;
@@ -20,8 +21,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.any;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -69,6 +71,8 @@ public class GeradorDePartidasServiceTest {
 
         dataInicio = LocalDate.of(2024, 4, 20);
         when(campeonatoProperties.getDataInicio()).thenReturn(dataInicio);
+
+        lenient().when(campeonatoProperties.getDataInicio()).thenReturn(LocalDate.of(2025, 5, 1));
     }
 
     @Test
@@ -110,242 +114,95 @@ public class GeradorDePartidasServiceTest {
         }
     }
 
-//    @Test
-//    void simularRodada_DeveSimularTodasAsPartidasDaRodada() {
-//        // Arrange
-//        int rodada = 1;
-//        List<Partidas> partidasRodada = new ArrayList<>();
-//        partidasRodada.add(new Partidas(times.get(0), times.get(1), rodada, dataInicio));
-//        partidasRodada.add(new Partidas(times.get(2), times.get(3), rodada, dataInicio));
-//
-//        when(partidasRepository.findByRound(rodada)).thenReturn(partidasRodada);
-//        when(partidasRepository.save(any(Partidas.class))).thenAnswer(i -> i.getArgument(0));
-//        when(classificacaoRepository.findByTimes(any(Times.class))).thenReturn(Optional.empty());
-//
-//        // Act
-//        geradorDePartidasService.simularRodada(rodada);
-//
-//        // Assert
-//        verify(partidasRepository, times(2)).save(partidasCaptor.capture());
-//        List<Partidas> partidasCapturadas = partidasCaptor.getAllValues();
-//
-//        for (Partidas partida : partidasCapturadas) {
-//            assertNotNull(partida.getGolsCasa());
-//            assertNotNull(partida.getGolsVisitante());
-//            assertTrue(partida.getGolsCasa() >= 0 && partida.getGolsCasa() <= 4);
-//            assertTrue(partida.getGolsVisitante() >= 0 && partida.getGolsVisitante() <= 4);
-//        }
-//
-//        // Verificar que a classificação foi atualizada
-//        verify(classificacaoRepository, times(4)).save(any(Classificacao.class));
-//    }
-//
-//    @Test
-//    void simularRodada_QuandoRodadaNaoExiste_DeveLancarException() {
-//        // Arrange
-//        int rodada = 10;
-//        when(partidasRepository.findByRound(rodada)).thenReturn(new ArrayList<>());
-//
-//        // Act & Assert
-//        Exception exception = assertThrows(RuntimeException.class, () -> {
-//            geradorDePartidasService.simularRodada(rodada);
-//        });
-//
-//        assertEquals("Nenhuma partida encontrada para a rodada " + rodada, exception.getMessage());
-//    }
-//
-//    @Test
-//    void atualizarClassificacao_QuandoTimeCasaVence_DeveAtualizarPontuacaoCorretamente() {
-//        // Arrange
-//        Times timeCasa = times.get(0);
-//        Times timeFora = times.get(1);
-//
-//        Partidas partida = new Partidas();
-//        partida.setTimesCasa(timeCasa);
-//        partida.setTimesFora(timeFora);
-//        partida.setGolsCasa(3);
-//        partida.setGolsVisitante(1);
-//
-//        Classificacao classificacaoCasa = new Classificacao(timeCasa);
-//        Classificacao classificacaoFora = new Classificacao(timeFora);
-//
-//        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.of(classificacaoCasa));
-//        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.of(classificacaoFora));
-//
-//        // Act
-//        geradorDePartidasService.atualizarClassificacao(partida);
-//
-//        // Assert
-//        verify(classificacaoRepository, times(2)).save(classificacaoCaptor.capture());
-//        List<Classificacao> classificacoesCapturadas = classificacaoCaptor.getAllValues();
-//
-//        Classificacao classificacaoCasaAtualizada = classificacoesCapturadas.get(0);
-//        Classificacao classificacaoForaAtualizada = classificacoesCapturadas.get(1);
-//
-//        // Verificando time casa (vencedor)
-//        assertEquals(1, classificacaoCasaAtualizada.getRound());
-//        assertEquals(3, classificacaoCasaAtualizada.getPontos());
-//        assertEquals(1, classificacaoCasaAtualizada.getVitorias());
-//        assertEquals(0, classificacaoCasaAtualizada.getEmpates());
-//        assertEquals(0, classificacaoCasaAtualizada.getDerrotas());
-//        assertEquals(3, classificacaoCasaAtualizada.getGolsPro());
-//        assertEquals(1, classificacaoCasaAtualizada.getGolsContra());
-//        assertEquals(2, classificacaoCasaAtualizada.getSaldoGols());
-//
-//        // Verificando time fora (perdedor)
-//        assertEquals(1, classificacaoForaAtualizada.getRound());
-//        assertEquals(0, classificacaoForaAtualizada.getPontos());
-//        assertEquals(0, classificacaoForaAtualizada.getVitorias());
-//        assertEquals(0, classificacaoForaAtualizada.getEmpates());
-//        assertEquals(1, classificacaoForaAtualizada.getDerrotas());
-//        assertEquals(1, classificacaoForaAtualizada.getGolsPro());
-//        assertEquals(3, classificacaoForaAtualizada.getGolsContra());
-//        assertEquals(-2, classificacaoForaAtualizada.getSaldoGols());
-//    }
-//
-//    @Test
-//    void atualizarClassificacao_QuandoTimeForaVence_DeveAtualizarPontuacaoCorretamente() {
-//        // Arrange
-//        Times timeCasa = times.get(0);
-//        Times timeFora = times.get(1);
-//
-//        Partidas partida = new Partidas();
-//        partida.setTimesCasa(timeCasa);
-//        partida.setTimesFora(timeFora);
-//        partida.setGolsCasa(0);
-//        partida.setGolsVisitante(2);
-//
-//        Classificacao classificacaoCasa = new Classificacao(timeCasa);
-//        Classificacao classificacaoFora = new Classificacao(timeFora);
-//
-//        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.of(classificacaoCasa));
-//        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.of(classificacaoFora));
-//
-//        // Act
-//        geradorDePartidasService.atualizarClassificacao(partida);
-//
-//        // Assert
-//        verify(classificacaoRepository, times(2)).save(classificacaoCaptor.capture());
-//        List<Classificacao> classificacoesCapturadas = classificacaoCaptor.getAllValues();
-//
-//        Classificacao classificacaoCasaAtualizada = classificacoesCapturadas.get(0);
-//        Classificacao classificacaoForaAtualizada = classificacoesCapturadas.get(1);
-//
-//        // Verificando time casa (perdedor)
-//        assertEquals(1, classificacaoCasaAtualizada.getRound());
-//        assertEquals(0, classificacaoCasaAtualizada.getPontos());
-//        assertEquals(0, classificacaoCasaAtualizada.getVitorias());
-//        assertEquals(0, classificacaoCasaAtualizada.getEmpates());
-//        assertEquals(1, classificacaoCasaAtualizada.getDerrotas());
-//        assertEquals(0, classificacaoCasaAtualizada.getGolsPro());
-//        assertEquals(2, classificacaoCasaAtualizada.getGolsContra());
-//        assertEquals(-2, classificacaoCasaAtualizada.getSaldoGols());
-//
-//        // Verificando time fora (vencedor)
-//        assertEquals(1, classificacaoForaAtualizada.getRound());
-//        assertEquals(3, classificacaoForaAtualizada.getPontos());
-//        assertEquals(1, classificacaoForaAtualizada.getVitorias());
-//        assertEquals(0, classificacaoForaAtualizada.getEmpates());
-//        assertEquals(0, classificacaoForaAtualizada.getDerrotas());
-//        assertEquals(2, classificacaoForaAtualizada.getGolsPro());
-//        assertEquals(0, classificacaoForaAtualizada.getGolsContra());
-//        assertEquals(2, classificacaoForaAtualizada.getSaldoGols());
-//    }
-//
-//    @Test
-//    void atualizarClassificacao_QuandoEmpate_DeveAtualizarPontuacaoCorretamente() {
-//        // Arrange
-//        Times timeCasa = times.get(0);
-//        Times timeFora = times.get(1);
-//
-//        Partidas partida = new Partidas();
-//        partida.setTimesCasa(timeCasa);
-//        partida.setTimesFora(timeFora);
-//        partida.setGolsCasa(1);
-//        partida.setGolsVisitante(1);
-//
-//        Classificacao classificacaoCasa = new Classificacao(timeCasa);
-//        Classificacao classificacaoFora = new Classificacao(timeFora);
-//
-//        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.of(classificacaoCasa));
-//        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.of(classificacaoFora));
-//
-//        // Act
-//        geradorDePartidasService.atualizarClassificacao(partida);
-//
-//        // Assert
-//        verify(classificacaoRepository, times(2)).save(classificacaoCaptor.capture());
-//        List<Classificacao> classificacoesCapturadas = classificacaoCaptor.getAllValues();
-//
-//        Classificacao classificacaoCasaAtualizada = classificacoesCapturadas.get(0);
-//        Classificacao classificacaoForaAtualizada = classificacoesCapturadas.get(1);
-//
-//        // Verificando time casa (empate)
-//        assertEquals(1, classificacaoCasaAtualizada.getRound());
-//        assertEquals(1, classificacaoCasaAtualizada.getPontos());
-//        assertEquals(0, classificacaoCasaAtualizada.getVitorias());
-//        assertEquals(1, classificacaoCasaAtualizada.getEmpates());
-//        assertEquals(0, classificacaoCasaAtualizada.getDerrotas());
-//        assertEquals(1, classificacaoCasaAtualizada.getGolsPro());
-//        assertEquals(1, classificacaoCasaAtualizada.getGolsContra());
-//        assertEquals(0, classificacaoCasaAtualizada.getSaldoGols());
-//
-//        // Verificando time fora (empate)
-//        assertEquals(1, classificacaoForaAtualizada.getRound());
-//        assertEquals(1, classificacaoForaAtualizada.getPontos());
-//        assertEquals(0, classificacaoForaAtualizada.getVitorias());
-//        assertEquals(1, classificacaoForaAtualizada.getEmpates());
-//        assertEquals(0, classificacaoForaAtualizada.getDerrotas());
-//        assertEquals(1, classificacaoForaAtualizada.getGolsPro());
-//        assertEquals(1, classificacaoForaAtualizada.getGolsContra());
-//        assertEquals(0, classificacaoForaAtualizada.getSaldoGols());
-//    }
-//
-//    @Test
-//    void atualizarClassificacao_QuandoClassificacaoNaoExiste_DeveCriarUmaNova() {
-//        // Arrange
-//        Times timeCasa = times.get(0);
-//        Times timeFora = times.get(1);
-//
-//        Partidas partida = new Partidas();
-//        partida.setTimesCasa(timeCasa);
-//        partida.setTimesFora(timeFora);
-//        partida.setGolsCasa(2);
-//        partida.setGolsVisitante(0);
-//
-//        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.empty());
-//        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.empty());
-//
-//        // Act
-//        geradorDePartidasService.atualizarClassificacao(partida);
-//
-//        // Assert
-//        verify(classificacaoRepository, times(2)).save(classificacaoCaptor.capture());
-//        List<Classificacao> classificacoesCapturadas = classificacaoCaptor.getAllValues();
-//
-//        Classificacao classificacaoCasaAtualizada = classificacoesCapturadas.get(0);
-//        Classificacao classificacaoForaAtualizada = classificacoesCapturadas.get(1);
-//
-//        // Verificando time casa (vencedor)
-//        assertEquals(timeCasa, classificacaoCasaAtualizada.getTimes());
-//        assertEquals(1, classificacaoCasaAtualizada.getRound());
-//        assertEquals(3, classificacaoCasaAtualizada.getPontos());
-//        assertEquals(1, classificacaoCasaAtualizada.getVitorias());
-//        assertEquals(0, classificacaoCasaAtualizada.getEmpates());
-//        assertEquals(0, classificacaoCasaAtualizada.getDerrotas());
-//        assertEquals(2, classificacaoCasaAtualizada.getGolsPro());
-//        assertEquals(0, classificacaoCasaAtualizada.getGolsContra());
-//        assertEquals(2, classificacaoCasaAtualizada.getSaldoGols());
-//
-//        // Verificando time fora (perdedor)
-//        assertEquals(timeFora, classificacaoForaAtualizada.getTimes());
-//        assertEquals(1, classificacaoForaAtualizada.getRound());
-//        assertEquals(0, classificacaoForaAtualizada.getPontos());
-//        assertEquals(0, classificacaoForaAtualizada.getVitorias());
-//        assertEquals(0, classificacaoForaAtualizada.getEmpates());
-//        assertEquals(1, classificacaoForaAtualizada.getDerrotas());
-//        assertEquals(0, classificacaoForaAtualizada.getGolsPro());
-//        assertEquals(2, classificacaoForaAtualizada.getGolsContra());
-//        assertEquals(-2, classificacaoForaAtualizada.getSaldoGols());
-//    }
+    @Test
+    void testSimularRodada() {
+        int round = 1;
+        Times timeCasa = new Times("Time A", "TA", "SP");
+        Times timeFora = new Times("Time B", "TB", "RJ");
+        Partidas partidaMock = new Partidas(timeCasa, timeFora, round, LocalDate.of(2025, 5, 1));
+
+        when(partidasRepository.findByRound(round)).thenReturn(List.of(partidaMock));
+        when(classificacaoRepository.findByTimes(any())).thenReturn(Optional.of(new Classificacao(timeCasa)));
+
+        geradorDePartidasService.simularRodada(round);
+
+        verify(partidasRepository, times(1)).save(any(Partidas.class));
+        verify(classificacaoRepository, times(2)).save(any(Classificacao.class));
+    }
+
+    @Test
+    void testSimularRodadaComExcecao() {
+        int round = 10;
+        when(partidasRepository.findByRound(round)).thenReturn(List.of());
+
+        Exception exception = assertThrows(RuntimeException.class, () -> geradorDePartidasService.simularRodada(round));
+
+        assertEquals("Nenhuma partida encontrada para a rodada " + round, exception.getMessage());
+    }
+
+    @Test
+    void testAtualizarClassificacao() {
+        Times timeCasa = new Times("Time A", "TA", "SP");
+        Times timeFora = new Times("Time B", "TB", "RJ");
+
+        Partidas partidaMock = new Partidas(timeCasa, timeFora, 1, LocalDate.of(2025, 5, 1));
+        partidaMock.setGolsCasa(2);
+        partidaMock.setGolsVisitante(1);
+
+        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.of(new Classificacao(timeCasa)));
+        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.of(new Classificacao(timeFora)));
+
+        geradorDePartidasService.atualizarClassificacao(partidaMock);
+
+        verify(classificacaoRepository, times(2)).save(any(Classificacao.class));
+    }
+
+    @Test
+    void testAtualizarClassificacaoVitoriaVisitante() {
+        Times timeCasa = new Times("Time A", "TA", "SP");
+        Times timeFora = new Times("Time B", "TB", "RJ");
+
+        Partidas partidaMock = new Partidas(timeCasa, timeFora, 1, LocalDate.of(2025, 5, 1));
+        partidaMock.setGolsCasa(1);
+        partidaMock.setGolsVisitante(2); // Time visitante vence
+
+        Classificacao classificacaoCasa = new Classificacao(timeCasa);
+        Classificacao classificacaoFora = new Classificacao(timeFora);
+
+        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.of(classificacaoCasa));
+        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.of(classificacaoFora));
+
+        geradorDePartidasService.atualizarClassificacao(partidaMock);
+
+        assertEquals(1, classificacaoFora.getVitorias());
+        assertEquals(3, classificacaoFora.getPontos());
+        assertEquals(1, classificacaoCasa.getDerrotas());
+
+        verify(classificacaoRepository, times(2)).save(any(Classificacao.class));
+    }
+
+    @Test
+    void testAtualizarClassificacaoEmpate() {
+        Times timeCasa = new Times("Time A", "TA", "SP");
+        Times timeFora = new Times("Time B", "TB", "RJ");
+
+        Partidas partidaMock = new Partidas(timeCasa, timeFora, 1, LocalDate.of(2025, 5, 1));
+        partidaMock.setGolsCasa(2);
+        partidaMock.setGolsVisitante(2); // Empate
+
+        Classificacao classificacaoCasa = new Classificacao(timeCasa);
+        Classificacao classificacaoFora = new Classificacao(timeFora);
+
+        when(classificacaoRepository.findByTimes(timeCasa)).thenReturn(Optional.of(classificacaoCasa));
+        when(classificacaoRepository.findByTimes(timeFora)).thenReturn(Optional.of(classificacaoFora));
+
+        geradorDePartidasService.atualizarClassificacao(partidaMock);
+
+        assertEquals(1, classificacaoCasa.getEmpates());
+        assertEquals(1, classificacaoFora.getEmpates());
+        assertEquals(1, classificacaoCasa.getPontos());
+        assertEquals(1, classificacaoFora.getPontos());
+
+        verify(classificacaoRepository, times(2)).save(any(Classificacao.class));
+    }
 }

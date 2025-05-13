@@ -7,7 +7,6 @@ com\dev\br\campeonato_brasileiro\repository\TimesRepository.class
 com\dev\br\campeonato_brasileiro\dto\TimesDTO.class
 com\dev\br\campeonato_brasileiro\dto\ClassificacaoDTO.class
 com\dev\br\campeonato_brasileiro\service\ExportacaoService.class
-com\dev\br\campeonato_brasileiro\config\SwaggerConfig.class
 com\dev\br\campeonato_brasileiro\controller\TimesCampeonatoController.class
 com\dev\br\campeonato_brasileiro\controller\CampeonatoController.class
 com\dev\br\campeonato_brasileiro\CampeonatoBrasileiroApplication.class

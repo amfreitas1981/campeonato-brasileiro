@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.43 s -- in com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.527 s -- in com.dev.br.campeonato_brasileiro.controller.CampeonatoControllerTest

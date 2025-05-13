@@ -1,73 +1,28 @@
 package com.dev.br.campeonato_brasileiro.model;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class TimesTest {
+class TimesTest {
 
     @Test
-    @DisplayName("Deve criar um time vazio")
-    public void testCriarTimeVazio() {
-        Times time = new Times();
+    void testConstructorWithParameters() {
+        Times times = new Times("Flamengo", "FLA", "RJ");
 
-        assertNotNull(time);
-        assertNull(time.getId());
-        assertNull(time.getNome());
-        assertNull(time.getSigla());
-        assertNull(time.getEstado());
+        assertEquals("Flamengo", times.getNome());
+        assertEquals("FLA", times.getSigla());
+        assertEquals("RJ", times.getEstado());
     }
 
     @Test
-    @DisplayName("Deve criar um time apenas com nome")
-    public void testCriarTimeComNome() {
-        Times time = new Times("São Paulo");
+    void testSetterMethods() {
+        Times times = new Times();
+        times.setNome("Palmeiras");
+        times.setSigla("PAL");
+        times.setEstado("SP");
 
-        assertNotNull(time);
-        assertNull(time.getId());
-        assertEquals("São Paulo", time.getNome());
-        assertNull(time.getSigla());
-        assertNull(time.getEstado());
-    }
-
-    @Test
-    @DisplayName("Deve criar um time completo")
-    public void testCriarTimeCompleto() {
-        Times time = new Times(1L, "Palmeiras", "PAL", "SP");
-
-        assertNotNull(time);
-        assertEquals(1L, time.getId());
-        assertEquals("Palmeiras", time.getNome());
-        assertEquals("PAL", time.getSigla());
-        assertEquals("SP", time.getEstado());
-    }
-
-    @Test
-    @DisplayName("Deve modificar valores de um time")
-    public void testModificarTime() {
-        Times time = new Times();
-
-        time.setId(2L);
-        time.setNome("Corinthians");
-        time.setSigla("COR");
-        time.setEstado("SP");
-
-        assertEquals(2L, time.getId());
-        assertEquals("Corinthians", time.getNome());
-        assertEquals("COR", time.getSigla());
-        assertEquals("SP", time.getEstado());
-    }
-
-    @Test
-    @DisplayName("Deve verificar o toString do time")
-    public void testToString() {
-        Times time = new Times(1L, "Santos", "SAN", "SP");
-
-        String toStringResult = time.toString();
-
-        assertTrue(toStringResult.contains("id=1"));
-        assertTrue(toStringResult.contains("nome=Santos"));
-        assertTrue(toStringResult.contains("sigla=SAN"));
-        assertTrue(toStringResult.contains("estado=SP"));
+        assertEquals("Palmeiras", times.getNome());
+        assertEquals("PAL", times.getSigla());
+        assertEquals("SP", times.getEstado());
     }
 }

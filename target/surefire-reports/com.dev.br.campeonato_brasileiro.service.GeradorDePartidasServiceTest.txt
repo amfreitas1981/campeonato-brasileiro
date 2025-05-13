@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 s -- in com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in com.dev.br.campeonato_brasileiro.service.GeradorDePartidasServiceTest

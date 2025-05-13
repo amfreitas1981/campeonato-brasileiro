@@ -25,10 +25,10 @@ public class TimesCampeonatoService {
         }
 
         try {
-            // Verificar se há duplicatas pelo nome
             Map<String, Long> countByNome = equipesDTO.stream()
                     .collect(Collectors.groupingBy(TimesDTO::nome, Collectors.counting()));
 
+            // TODO: Verificar se há duplicatas pelo nome
             boolean hasDuplicates = countByNome.values().stream().anyMatch(count -> count > 1);
             if (hasDuplicates) {
                 throw new IllegalArgumentException("Existem times duplicados na lista.");
@@ -47,7 +47,7 @@ public class TimesCampeonatoService {
         } catch (DataIntegrityViolationException e) {
             throw new RuntimeException("Erro de integridade de dados ao inserir equipes. " + e.getMessage(), e);
         } catch (Exception e) {
-            throw new RuntimeException("Erro ao inserir equipes. Tente novamente. " + e.getMessage(), e);
+            throw new IllegalArgumentException("Erro ao inserir equipes. Tente novamente. " + e.getMessage(), e);
         }
     }
 
